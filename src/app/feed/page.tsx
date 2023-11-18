@@ -2,18 +2,15 @@
 import Head from "next/head";
 import { useState } from "react";
 
-
 // Add additional imports as needed
 
 export default function DefendYourTeam() {
   const [expanded, setExpanded] = useState(false);
   const [isModalOpen, setModalOpen] = useState(false);
 
-
   const toggleModal = () => {
     setModalOpen(!isModalOpen);
   };
-  
 
   return (
     <>
@@ -89,14 +86,14 @@ export default function DefendYourTeam() {
                           </li>
                           <li className="text-red-400 font-poppins  pl-2">
                             {" "}
-                            20 usdt
+                            2 matic
                           </li>
                           <li className="p-2 pt-3 font-poppins  cursor-pointer transition-all duration-300 hover:scale-110">
                             @daniel
                           </li>
                           <li className="text-red-400  font-poppins  pl-2">
                             {" "}
-                            20 usdt
+                            2 matic
                           </li>
                         </ul>
                       </div>
@@ -107,21 +104,21 @@ export default function DefendYourTeam() {
                           </li>
                           <li className="text-red-400 font-poppins  pl-2">
                             {" "}
-                            20 usdt
+                            2 matic
                           </li>
                           <li className="p-2 pt-3 font-poppins  cursor-pointer transition-all duration-300 hover:scale-110">
                             @daniel
                           </li>
                           <li className="text-red-400  font-poppins  pl-2">
                             {" "}
-                            20 usdt
+                            2 matic
                           </li>
                           <li className="p-2 pt-3 font-poppins cursor-pointer transition-all duration-300 hover:scale-110">
                             @stani
                           </li>
                           <li className="text-red-400 font-poppins  pl-2">
                             {" "}
-                            20 usdt
+                            2 matic
                           </li>
                         </ul>
                       </div>
@@ -135,7 +132,7 @@ export default function DefendYourTeam() {
                 )}
               </div>
               <button className="block bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-full mx-auto my-4 transition duration-300 ease-in-out transform hover:-translate-y-1 shadow-lg font-poppins">
-                Join for 20 USDT
+                Join for 2 matic
               </button>
             </div>
 
@@ -191,21 +188,21 @@ export default function DefendYourTeam() {
                           </li>
                           <li className="text-red-400 font-poppins  pl-2">
                             {" "}
-                            20 usdt
+                            2 matic
                           </li>
                           <li className="p-2 pt-3 font-poppins  cursor-pointer transition-all duration-300 hover:scale-110">
                             @daniel
                           </li>
                           <li className="text-red-400  font-poppins  pl-2">
                             {" "}
-                            20 usdt
+                            2 matic
                           </li>
                           <li className="p-2 pt-3 font-poppins  cursor-pointer transition-all duration-300 hover:scale-110">
                             @stani
                           </li>
                           <li className="text-red-400  font-poppins  pl-2">
                             {" "}
-                            20 usdt
+                            2 matic
                           </li>
                         </ul>
                       </div>
@@ -216,65 +213,81 @@ export default function DefendYourTeam() {
                           </li>
                           <li className="text-red-400 font-poppins  pl-2">
                             {" "}
-                            20 usdt
+                            2 matic
                           </li>
                           <li className="p-2 pt-3 font-poppins  cursor-pointer transition-all duration-300 hover:scale-110">
                             @daniel
                           </li>
                           <li className="text-red-400  font-poppins  pl-2">
                             {" "}
-                            20 usdt
+                            2 matic
                           </li>
                           <li className="p-2 pt-3 font-poppins cursor-pointer transition-all duration-300 hover:scale-110">
                             @stani
                           </li>
                           <li className="text-red-400 font-poppins  pl-2">
                             {" "}
-                            20 usdt
+                            2 matic
                           </li>
                         </ul>
                       </div>
                     </div>
                     <div>
                       <p className="my-4 text-gray-700 font-poppins text-center font-light italic">
-                       Joint the waiting list
+                        Joint the waiting list
                       </p>
                     </div>
                   </div>
                 )}
               </div>
-              <button onClick={toggleModal} className="block bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-full mx-auto my-4 transition duration-300 ease-in-out transform hover:-translate-y-1 shadow-lg font-poppins">
-                Join for 20 USDT
+              <button
+                onClick={toggleModal}
+                className="block bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-full mx-auto my-4 transition duration-300 ease-in-out transform hover:-translate-y-1 shadow-lg font-poppins"
+              >
+                Join for 2 matic
               </button>
               {isModalOpen && (
-  <div className="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full flex justify-center items-center">
-    <div className="relative bg-white rounded-lg shadow-xl">
-      <div className="flex justify-end p-2">
-        <button onClick={toggleModal} className="text-gray-400 hover:text-gray-900">
-          <span className="text-2xl">&times;</span>
-        </button>
-      </div>
-      <div className="px-6 py-4">
-        <h3 className="text-lg font-medium text-center text-gray-900 mb-4">Join the waiting list</h3>
-        <div className="space-y-4">
-          <p className="text-sm text-gray-500 text-center">In Bet Markets, we promote fair play. You'll be on standby until a player from the opposing team joins. Your stake is secure, and you'll keep earning money and points. Want to speed things up? Invite a friend from the rival team to follow each other.</p>
-          <button className="w-full bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-full transition duration-300 ease-in-out flex items-center justify-center">
-  <img src="./assets/push.png" alt="Icono" className="mr-2 w-6 h-6" /> {/* Asegúrate de ajustar la ruta de la imagen */}
-  Invite Friends
-</button>
+                <div className="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full flex justify-center items-center">
+                  <div className="relative bg-white rounded-lg shadow-xl">
+                    <div className="flex justify-end p-2">
+                      <button
+                        onClick={toggleModal}
+                        className="text-gray-400 hover:text-gray-900"
+                      >
+                        <span className="text-2xl">&times;</span>
+                      </button>
+                    </div>
+                    <div className="px-6 py-4">
+                      <h3 className="text-lg font-medium text-center text-gray-900 mb-4">
+                        Join the waiting list
+                      </h3>
+                      <div className="space-y-4">
+                        <p className="text-sm text-gray-500 text-center">
+                          In Bet Markets, we promote fair play. You'll be on
+                          standby until a player from the opposing team joins.
+                          Your stake is secure, and you'll keep earning money
+                          and points. Want to speed things up? Invite a friend
+                          from the rival team to follow each other.
+                        </p>
+                        <button className="w-full bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-full transition duration-300 ease-in-out flex items-center justify-center">
+                          <img
+                            src="./assets/push.png"
+                            alt="Icono"
+                            className="mr-2 w-6 h-6"
+                          />{" "}
+                          {/* Asegúrate de ajustar la ruta de la imagen */}
+                          Invite Friends
+                        </button>
 
-          <button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-full transition duration-300 ease-in-out">
-            Join for 20 USDT
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-)}
-
-
+                        <button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-full transition duration-300 ease-in-out">
+                          Join for 2 matic
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
             </div>
-
 
             <div className="bg-gradient-to-r from-blue-100 via-white to-blue-100 rounded-lg p-4 my-4 shadow-md">
               <div className="flex items-center ">
@@ -312,7 +325,7 @@ export default function DefendYourTeam() {
                 Nov, 23th 2023
               </p>
               <button className="block bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-full mx-auto my-4 transition duration-300 ease-in-out transform hover:-translate-y-1 shadow-lg font-poppins">
-                Join for 20 USDT
+                Join for 2 matic
               </button>
             </div>
 
@@ -352,7 +365,7 @@ export default function DefendYourTeam() {
                 Nov, 23th 2023
               </p>
               <button className="block bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-full mx-auto my-4 transition duration-300 ease-in-out transform hover:-translate-y-1 shadow-lg font-poppins">
-                Join for 20 USDT
+                Join for 2 matic
               </button>
             </div>
             {/* Repeat the above div for each bet */}

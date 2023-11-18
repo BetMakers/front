@@ -18,6 +18,7 @@ const handleButtonClick = () => {
   }, 2000); // 2000 ms = 2 segundos
 };
 
+
   return (
     <div className="flex flex-col items-center justify-center p-4 pt-10 ">
       <p className='text-2xl text-center pb-6 font-poppins'>
@@ -40,6 +41,13 @@ const handleButtonClick = () => {
         <label className="block text-white mb-2">Put your amount that you want to bet *</label>
         <input
           type="number"
+          className="w-full p-2 mb-4 bg-white border border-gray-400 rounded-md text-gray-700"
+          placeholder="Amount in USDT"
+        />
+
+<label className="block text-white mb-2">write your post *</label>
+        <input
+          type="text"
           className="w-full p-2 mb-4 bg-white border border-gray-400 rounded-md text-gray-700"
           placeholder="Amount in USDT"
         />
