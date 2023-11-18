@@ -1,7 +1,8 @@
 
 'use client'
 
-import { useRouter } from 'next/router';
+
+import { useRouter } from 'next/navigation';
 import React, { useState } from 'react';
 import { IoMenu } from 'react-icons/io5';
 
@@ -11,7 +12,7 @@ const Navbar = () => {
   
     const navigate = (path) => {
       router.push(path);
-      setShowMenu(false); // Opcional: Cierra el menú después de navegar
+      setShowMenu(false); 
     };
 
   return (
