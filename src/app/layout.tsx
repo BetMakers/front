@@ -1,6 +1,10 @@
+// app/layout.tsx
+import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import './globals.css'
+import { LensProvider } from './LensProvider'
+import { Web3ModalProvider } from './Web3ModalProvider'
+import Navbar from './components/navbar'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,7 +20,17 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.className} bg-gradient-to-r from-[#3C88AE] to-[#072444]`}>
+        <Web3ModalProvider>
+          <LensProvider>
+            {/* Aquí podrías agregar un div contenedor si necesitas más estilos o clases adicionales */}
+            <Navbar />
+            <div className="min-h-screen">
+              {children}
+            </div>
+          </LensProvider>
+        </Web3ModalProvider>
+      </body>
     </html>
   )
 }
