@@ -1,7 +1,7 @@
 "use client";
 import Head from "next/head";
 import { useState } from "react";
-import { IoMenu } from "react-icons/io5";
+
 
 // Add additional imports as needed
 
@@ -237,7 +237,7 @@ export default function DefendYourTeam() {
                     </div>
                     <div>
                       <p className="my-4 text-gray-700 font-poppins text-center font-light italic">
-                        We have an spot waiting for you!
+                       Joint the waiting list
                       </p>
                     </div>
                   </div>
