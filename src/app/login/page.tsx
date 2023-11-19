@@ -45,7 +45,7 @@ export default function Login() {
           login({ address: address || '' });
         } else {
           
-          router.push('/feed'); // Redirecciona a '/feed' si useSession es true
+          router.push('/teams'); // Redirecciona a '/feed' si useSession es true
         }
       }}>
       {!useSession ? 'Connect' : 'Continue'}
